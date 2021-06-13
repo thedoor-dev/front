@@ -1,0 +1,1 @@
+import{d as a,o as s,c,p as o,a as d}from"./vendor.a50a7c3c.js";o("data-v-11430cfc");const t={id:"about"};d();var e=a({expose:[],setup:a=>(a,o)=>(s(),c("div",t,"关于页"))});e.__scopeId="data-v-11430cfc";export default e;

@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <div id="login">
         <input type="text" v-model="username" placeholder="用户名" />
         <input type="password" v-model="password" placeholder="密码" />
@@ -9,7 +9,7 @@
 <script lang="ts" setup>
 import { useRouter } from "vue-router";
 import { signin } from "../api/auth";
-import { useStore } from "../store";
+import { useStore } from "vuex";
 
 ref: username = "";
 ref: password = "";
@@ -32,4 +32,4 @@ const comfireToSignIn = () => {
 }
 
 </script>
-
+ -->

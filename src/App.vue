@@ -1,30 +1,33 @@
 <template>
-  <div style="margin: auto; width: 240px;">
-    <img alt="logo" src="./assets/logo.png" style="width: 100%;" />
-  </div>
-
+  <th-nav />
   <router-view></router-view>
 </template>
 
+<script lang="ts" setup>
+import ThNav from "./components/ThNav.vue";
+</script>
 
 <style lang="scss">
-// #app {
-// }
 body {
   background-image: url(./assets/bg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
-  // background: url("https://rmt.dogedoge.com/fetch/fluid/storage/bg/vdysjx.png?w=1920&fmt=webp")
-  //   center center / cover no-repeat;
-  transform: translate3d(0px, 96px, 0px);
+  background-position: center 0;
+  background-size: auto 70vh;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+#app {
+  flex: 1;
 }
 .mainpage {
-  width: 80%;
+  width: 72%;
   margin: auto;
 }
-@media screen and(max-width: 1024px) {
+@media screen and(max-width: 992px) {
   .mainpage {
     width: calc(100% - 8px);
   }

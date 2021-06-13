@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html lang="zh">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TheDoor | 去年今日此门中</title>
-  </head>
-  <body>
-    <div id="app" class="mainpage"></div>
-    <div id="footer"></div>
-    <script type="module" src="/src/main.ts"></script>
-    <style>
-      /* #footer {
-        position: ;
-      } */
-    </style>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TheDoor | 去年今日此门中</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div id="app"></div>
+  <div id="footer">
+    <a href="/">Power By TheDoor</a>
+    <a href="https://beian.miit.gov.cn/#/Integrated/recordQuery">皖ICP备19002899号</a>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+  <style>
+    #th-comment {
+      background-color: white;
+      margin-top: 40px;
+      border-radius: 8px;
+      padding: 48px 10% 48px 10%;
+      box-shadow: 0 12px 15px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
+    }
+
+    #footer {
+      padding: 48px;
+    }
+
+    #footer>a {
+      display: block;
+      text-align: center;
+    }
+  </style>
+</body>
+
 </html>

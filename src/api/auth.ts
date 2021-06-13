@@ -1,8 +1,8 @@
-import requests from "./index"
+import requests from "."
 
 export const signin = (username: string, password: string) => {
     return requests.post("/api/signin", {
-        username: username,
-        password: password
+        name: username,
+        pswd: password
     })
 }

@@ -1,0 +1,1 @@
+import{d as a,o as s,c as d,p as o,a as t}from"./vendor.a50a7c3c.js";o("data-v-47bf2880");const e={id:"tag"};t();var p=a({expose:[],setup:a=>(a,o)=>(s(),d("div",e,"标签页"))});p.__scopeId="data-v-47bf2880";export default p;

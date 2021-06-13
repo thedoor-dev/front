@@ -1,8 +1,8 @@
 import axios from "axios";
+import { useRouter } from "vue-router";
 import { getToken, isSignin } from "../store";
 
 const requests = axios.create();
-
 
 requests.interceptors.request.use(config => {
     if (isSignin())
@@ -11,16 +11,18 @@ requests.interceptors.request.use(config => {
 });
 
 requests.interceptors.response.use(response => {
-    if (response.status !== 200) {
-        alert("请求失败！！！");
-    } else {
-        switch (response.data.code) {
-            case 2000:
-                return response.data;
-            default:
-                alert("未捕获的异常！！！");
-                break;
-        }
+    switch (response.status) {
+        case 200:
+            switch (response.data.code) {
+                case 2000:
+                    return response.data;
+                // case 4003:
+                default:
+                    alert("未捕获的异常！！！");
+                    break;
+            }
+        default:
+            alert("请求失败！！！");
     }
 })
 
