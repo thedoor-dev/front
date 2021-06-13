@@ -4,6 +4,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "https://cdn.jsdelivr.net/gh/thedoor/front/build/",
   server: {
     proxy: {
       "/api": "http://localhost:9200"
